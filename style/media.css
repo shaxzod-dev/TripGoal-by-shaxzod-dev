@@ -1,0 +1,45 @@
+@media (max-width: 900px) {
+  .header-nav_link {
+    font-size: 14px;
+  }
+  .register-btn {
+    font-size: 14px;
+    padding: 15px 25px;
+  }
+  .logo-img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-nav {
+    position: absolute;
+    width: 40%;
+    height: 100vh;
+    background-color: var(--primary);
+    top: 0;
+    left: -100%;
+    flex-direction: column;
+    justify-content: center;
+    transition: var(---transition);
+  }
+  .header-nav.active {
+    left: 0;
+  }
+  .header-nav_link:hover {
+    background-color: var(--light);
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .register-btn {
+    display: none;
+  }
+  .burger-menu {
+    display: flex;
+  }
+  .hide {
+    display: block;
+    background-color: var(--light);
+    color: var(--primary);
+  }
+}
