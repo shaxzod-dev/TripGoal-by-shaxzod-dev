@@ -69,11 +69,11 @@ var swiper = new Swiper(".mySwiper2", {
   autoplay: true,
 });
 
-function test(num) {
-  console.log(num);
-  num--;
-  if (num >= 0) {
-    test(num);
-  }
-}
-test(10);
+// function test(num) {
+//   console.log(num);
+//   num--;
+//   if (num >= 0) {
+//     test(num);
+//   }
+// }
+// test(10);
