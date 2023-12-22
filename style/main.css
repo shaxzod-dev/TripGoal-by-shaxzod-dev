@@ -41,7 +41,7 @@ button {
 
 .subtitle {
   color: var(--blue-light, #00b3a0);
-  font-family: var(--RMedium);
+  font-family: var(--RM);
   font-size: 16px;
   line-height: 18px;
   display: block;
@@ -49,7 +49,7 @@ button {
 
 .title {
   color: var(--blue-dark, #002248);
-  font-family: var(--Al-Medium);
+  font-family: var(--ALMd);
   font-size: 42px;
   line-height: 52px;
   text-transform: capitalize;
@@ -57,16 +57,16 @@ button {
 
 .text {
   color: var(--text-color, #697687);
-  font-family: var(--RRegular);
-  font-size: var(--xs);
+  font-family: var(--RR);
+  font-size: var(--xl);
   line-height: 28px;
   text-align: justify;
 }
 
 .btn {
   color: var(--light);
-  font-family: var(--RBold);
-  font-size: var(--xs);
+  font-family: var(--RB);
+  font-size: var(--xl);
   line-height: var(--md);
   border-radius: 10px;
   background: var(--primary);
