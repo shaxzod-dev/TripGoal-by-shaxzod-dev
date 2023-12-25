@@ -58,7 +58,7 @@ button {
 .text {
   color: var(--text-color, #697687);
   font-family: var(--RR);
-  font-size: var(--xl);
+  font-size: var(--normal);
   line-height: 28px;
   text-align: justify;
 }
