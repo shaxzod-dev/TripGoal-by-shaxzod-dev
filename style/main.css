@@ -73,6 +73,7 @@ button {
   transition: var(---transition);
   border: 1px solid transparent;
   text-transform: capitalize;
+  transform: scale(1.1);
 }
 
 .btn:hover {
