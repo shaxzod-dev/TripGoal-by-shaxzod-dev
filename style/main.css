@@ -70,7 +70,7 @@ button {
   line-height: var(--md);
   border-radius: 10px;
   background: var(--primary);
-  transition: var(--transition);
+  transition: var(---transition);
   border: 1px solid transparent;
   text-transform: capitalize;
 }
