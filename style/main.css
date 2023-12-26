@@ -842,8 +842,8 @@ select {
 
 .box-item_text {
   color: var(--blue-dark, #002248);
-  font-family: var(--RRegular);
-  font-size: var(--xs);
+  font-family: var(--RR);
+  font-size: var(--normal);
   line-height: 28px; /* 200% */
 }
 
