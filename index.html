@@ -7,6 +7,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="./node_modules/aos/dist/aos.css" />
     <link rel="stylesheet" href="./style/main.css" />
     <link rel="stylesheet" href="./style/media.css" />
     <title>Trip Goal</title>
@@ -45,7 +46,12 @@
       <section class="banner">
         <div class="container">
           <div class="content banner-content_a">
-            <div class="images banner-item">
+            <div
+              class="images banner-item"
+              data-aos="fade-right"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+            >
               <div class="banner-img-one">
                 <img
                   src="./images/images/banner-img-2.png"
@@ -61,7 +67,12 @@
                 />
               </div>
             </div>
-            <div class="banner-info banner-item">
+            <div
+              class="banner-info banner-item"
+              data-aos="fade-left"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+            >
               <button type="button" class="banner-btn">Book Now</button>
               <h1 class="banner-info_title">
                 Let’s Enjoy Your Trip with TripGoal
@@ -123,7 +134,7 @@
       <section class="travel">
         <div class="container">
           <div class="travel-content">
-            <div class="travel-content_info">
+            <div class="travel-content_info" data-aos="zoom-in-up">
               <p class="travel-sub travel-items">
                 3 steps for the perfect trip
               </p>
@@ -135,21 +146,21 @@
             </div>
           </div>
           <div class="row">
-            <div class="row-item item-a travel-items">
+            <div class="row-item item-a travel-items" data-aos="fade-up-right">
               <img src="./images/icons/chat.svg" alt="" />
               <h3 class="item-title">Tell us what you want to do</h3>
               <p class="item-text">
                 Fill out a 2-minute questionnaire about how you like to travel
               </p>
             </div>
-            <div class="row-item item-b">
+            <div class="row-item item-b" data-aos="fade-up-right">
               <img src="./images/icons/calendar.svg" alt="" />
               <h3 class="item-title">Share your travel preference</h3>
               <p class="item-text">
                 It all happends online,We recommend everything to your vision
               </p>
             </div>
-            <div class="row-item item-c travel-items">
+            <div class="row-item item-c travel-items" data-aos="fade-up-right">
               <img src="./images/icons/star.svg" alt="" />
               <h3 class="item-title">We’ll give you recommendations</h3>
               <p class="item-text">
@@ -462,5 +473,9 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/app.js"></script>
+    <script src="./node_modules/aos/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

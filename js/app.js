@@ -5,31 +5,6 @@ BurgerMenu.addEventListener("click", () => {
   BurgerMenu.classList.toggle("show");
 });
 
-const bannerItems = document.querySelectorAll(".banner-item");
-window.addEventListener("DOMContentLoaded", () => {
-  bannerItems.forEach((el) => {
-    el.style.transform = "translateX(0)";
-    el.style.opacity = "1";
-  });
-});
-
-const TravelItems = document.querySelectorAll(".travel-items");
-const RowItem = document.querySelectorAll(".item-b");
-const travel = document.querySelector(".travel");
-
-window.addEventListener("scroll", () => {
-  if (scrollY > travel.offsetTop - travel.clientHeight / 2) {
-    TravelItems.forEach((el) => {
-      el.style.transform = "translateX(0)";
-      el.style.opacity = "1";
-    });
-
-    RowItem.forEach((el) => {
-      el.style.opacity = "1";
-    });
-  }
-});
-
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
   spaceBetween: 30,
