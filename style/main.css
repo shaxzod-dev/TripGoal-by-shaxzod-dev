@@ -526,7 +526,7 @@ select {
   font-size: var(--normal);
   line-height: 28px;
 }
-  
+
 .btn-group {
   position: relative;
   display: flex;
@@ -605,8 +605,6 @@ select {
   border-radius: 10px;
   border: 1px solid #989898;
   background: rgba(0, 34, 72, 0.3);
-  backdrop-filter: blur(10px);
- 
 }
 
 .location-slide_img {
