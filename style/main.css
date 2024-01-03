@@ -526,9 +526,11 @@ select {
   font-size: var(--normal);
   line-height: 28px;
 }
-
+  
 .btn-group {
   position: relative;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .swiper {
