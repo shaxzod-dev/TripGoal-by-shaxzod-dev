@@ -91,3 +91,28 @@ window.addEventListener("scroll", function scrol() {
 //     console.log(i);
 //   }, 2000)
 // }  qayta qayta qiladi
+
+var swiper = new Swiper(".mySwiper2", {
+  slidesPerView: 4,
+  spaceBetween: 50,
+  centeredSlides: true,
+  autoplay: true,
+});
+
+var swiper = new Swiper(".testimonial-swiper", {
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  grabCursor: true,
+  effect: "creative",
+  creativeEffect: {
+    prev: {
+      shadow: true,
+      translate: [0, 0, -400],
+    },
+    next: {
+      translate: ["100%", 0, 0],
+    },
+  },
+});
