@@ -44,6 +44,29 @@ var swiper = new Swiper(".mySwiper2", {
   autoplay: true,
 });
 
+const aboutSec = document.querySelector(".about");
+const timer = document.querySelectorAll(".box-item_count");
+window.addEventListener("scroll", function scroll() {
+  if (window.scrollY > aboutSec.offsetTop - aboutSec.clientHeight / 2) {
+    for (let i = 0; i < timer.length; i++) {
+      const count = +timer[i].getAttribute("count");
+      function rec(n = 0) {
+        timer[i].innerHTML = n;
+        n++;
+        console.log(n);
+        if (n <= count) {
+          setTimeout(() => {
+            rec(n);
+          }, 42);
+        }
+      }
+      rec();
+    }
+
+    this.window.removeEventListener("scroll", scroll);
+  }
+});
+
 // function test(num) {
 //   console.log(num);
 //   num--;
@@ -60,7 +83,7 @@ var swiper = new Swiper(".mySwiper2", {
 //   setTimeout (() => {
 //     console.log(i);
 //   }, 1000)
-// } 
+// }
 // set time out kutadi va qiladi
 
 // for (let i = 0; i < 2; i++) {
