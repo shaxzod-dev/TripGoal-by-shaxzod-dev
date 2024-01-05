@@ -47,7 +47,7 @@ var swiper = new Swiper(".mySwiper2", {
 const aboutSec = document.querySelector(".about");
 const timer = document.querySelectorAll(".box-item_count");
 window.addEventListener("scroll", function scroll() {
-  if (window.scrollY > aboutSec.offsetTop - aboutSec.clientHeight / 2) {
+  if (scrollY > aboutSec.offsetTop - aboutSec.clientHeight / 2) {
     for (let i = 0; i < timer.length; i++) {
       const count = +timer[i].getAttribute("count");
       function rec(n = 0) {
@@ -63,7 +63,7 @@ window.addEventListener("scroll", function scroll() {
       rec();
     }
 
-    this.window.removeEventListener("scroll", scroll);
+    window.removeEventListener("scroll", scroll);
   }
 });
 
